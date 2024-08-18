@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='form1.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: black;">MOOD MATRIX</h1>
+        <form action="/submit" method="POST">
+            <div class="content">
+                <label for="q1">
+                    Rate your anxiety level(0-21)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="21" value="0" id="seek-slider" name="anxiety">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    Rate your self esteem(0-30)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="30" value="0" id="seek-slider" name="self_esteem">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    Do you have any mental health issues before(1 if yes)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="1" value="0" id="seek-slider" name="mental_health_history">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    Rate your depression(0-27)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="27" value="0" id="seek-slider" name="depression">
+                
+            </div>
+            <div class="content">
+                <label for="q1">
+                  On a scale of 0 to 5, how bad is your headache right now?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="headache">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rate your blood pressure level overall(1-3)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="1" max= "3" value="0" id="seek-slider" name="blood_pressure">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How do you measure your sleep quality(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="sleep_quality">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rank your breathing difficulties on a scale from 0 to 5?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="breathing_problem">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rate the current noise level in your environment(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="noise_level">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How well is your living condition(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="living_conditions">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rate your current sense of safety in this environment(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="safety">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rate your current satisfaction with meeting your basic needs such as food, shelter, and clothing(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="basic_needs">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rate your current level of satisfaction with your academic performance(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="academic_performance">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    how would you rate your current level of satisfaction with your study load(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="study_load">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rate your current satisfaction level with the relationship between you and your teacher(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="teacher_student_relationship">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How concerned are you about your future career prospects(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="future_career_concerns">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rate the level of social support you currently receive(0-3)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="3" value="0" id="seek-slider" name="social_support">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How much do you feel influenced by peer pressure in your decisions and actions(0-5)?
+
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="peer_pressure">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How would you rate your participation in extracurricular activities(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="extracurricular_activities">
+            </div>
+            <div class="content">
+                <label for="q1">
+                    How much have you experienced bullying recently(0-5)?
+            
+                </label>
+                <div id="seek-value">0</div>
+                <input type="range" min="0" max="5" value="0" id="seek-slider" name="bullying">
+            </div>
+
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="{{url_for('static',filename='form.js')}}"></script>
+</body>
+</html>
